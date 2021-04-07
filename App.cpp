@@ -20,7 +20,7 @@ double Gr(double R) {
 
 double Sigm(double R, double Tot, double GrR, double Lim)
 {
-	double OUT = (1 / (1 + exp((Tot - GrR)/Lim)) - 0.5) * Lim;
+	double OUT = (1 / (1 + exp((Tot - GrR) * 1.5 /Lim)) - 0.5) * 2 * Lim;
 	return OUT;
 }
 
